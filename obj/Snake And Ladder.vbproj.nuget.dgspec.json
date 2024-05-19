@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m1prokenneth\\source\\repos\\Snake And Ladder\\Snake And Ladder.vbproj": {}
+    "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\Snake And Ladder.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\m1prokenneth\\source\\repos\\Snake And Ladder\\Snake And Ladder.vbproj": {
+    "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\Snake And Ladder.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m1prokenneth\\source\\repos\\Snake And Ladder\\Snake And Ladder.vbproj",
+        "projectUniqueName": "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\Snake And Ladder.vbproj",
         "projectName": "Snake And Ladder",
-        "projectPath": "C:\\Users\\m1prokenneth\\source\\repos\\Snake And Ladder\\Snake And Ladder.vbproj",
-        "packagesPath": "C:\\Users\\m1prokenneth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m1prokenneth\\source\\repos\\Snake And Ladder\\obj\\",
+        "projectPath": "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\Snake And Ladder.vbproj",
+        "packagesPath": "C:\\Users\\kennethterrago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\m1prokenneth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kennethterrago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

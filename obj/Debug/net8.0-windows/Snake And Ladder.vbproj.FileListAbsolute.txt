@@ -15,3 +15,21 @@ C:\Users\m1prokenneth\source\repos\Snake And Ladder\obj\Debug\net8.0-windows\ref
 C:\Users\m1prokenneth\source\repos\Snake And Ladder\obj\Debug\net8.0-windows\Snake And Ladder.pdb
 C:\Users\m1prokenneth\source\repos\Snake And Ladder\obj\Debug\net8.0-windows\Snake And Ladder.genruntimeconfig.cache
 C:\Users\m1prokenneth\source\repos\Snake And Ladder\obj\Debug\net8.0-windows\ref\Snake And Ladder.dll
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\bin\Debug\net8.0-windows\Snake And Ladder.exe
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\bin\Debug\net8.0-windows\Snake And Ladder.deps.json
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\bin\Debug\net8.0-windows\Snake And Ladder.runtimeconfig.json
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\bin\Debug\net8.0-windows\Snake And Ladder.dll
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\bin\Debug\net8.0-windows\Snake And Ladder.pdb
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake_And_Ladder.Form1.resources
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake_And_Ladder.Resources.resources
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.vbproj.GenerateResource.cache
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.AssemblyInfoInputs.cache
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.AssemblyInfo.vb
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.vbproj.CoreCompileInputs.cache
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.sourcelink.json
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.dll
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\refint\Snake And Ladder.dll
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.pdb
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\Snake And Ladder.genruntimeconfig.cache
+C:\Users\kennethterrago\Documents\Repositories\snake_and_ladder\obj\Debug\net8.0-windows\ref\Snake And Ladder.dll

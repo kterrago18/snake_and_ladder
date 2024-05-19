@@ -29,11 +29,19 @@ Partial Class Form1
         RollButton = New Button()
         RestartButton = New Button()
         ControlPanel = New Panel()
+        GroupBox2 = New GroupBox()
         PlayerTurnLabel = New Label()
+        GroupBox1 = New GroupBox()
+        labelPlayerOnePosition = New Label()
+        labelPlayer2Position = New Label()
+        labelPlayer1Position = New Label()
+        labelPlayerTwoPosition = New Label()
         BoardPanel.SuspendLayout()
         CType(PlayerOnePictureBox, ComponentModel.ISupportInitialize).BeginInit()
         CType(PlayerTwoPictureBox, ComponentModel.ISupportInitialize).BeginInit()
         ControlPanel.SuspendLayout()
+        GroupBox2.SuspendLayout()
+        GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' BoardPanel
@@ -52,7 +60,7 @@ Partial Class Form1
         PlayerOnePictureBox.BackColor = Color.Transparent
         PlayerOnePictureBox.BackgroundImage = My.Resources.Resources.p2
         PlayerOnePictureBox.BackgroundImageLayout = ImageLayout.Stretch
-        PlayerOnePictureBox.Location = New Point(37, 1432)
+        PlayerOnePictureBox.Location = New Point(65, 1431)
         PlayerOnePictureBox.Name = "PlayerOnePictureBox"
         PlayerOnePictureBox.Size = New Size(80, 80)
         PlayerOnePictureBox.TabIndex = 1
@@ -63,7 +71,7 @@ Partial Class Form1
         PlayerTwoPictureBox.BackColor = Color.Transparent
         PlayerTwoPictureBox.BackgroundImage = My.Resources.Resources.p1
         PlayerTwoPictureBox.BackgroundImageLayout = ImageLayout.Stretch
-        PlayerTwoPictureBox.Location = New Point(103, 1369)
+        PlayerTwoPictureBox.Location = New Point(65, 1431)
         PlayerTwoPictureBox.Name = "PlayerTwoPictureBox"
         PlayerTwoPictureBox.Size = New Size(80, 80)
         PlayerTwoPictureBox.TabIndex = 0
@@ -93,6 +101,7 @@ Partial Class Form1
         ' 
         ' RestartButton
         ' 
+        RestartButton.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         RestartButton.Location = New Point(12, 1502)
         RestartButton.Name = "RestartButton"
         RestartButton.Size = New Size(410, 46)
@@ -102,7 +111,8 @@ Partial Class Form1
         ' 
         ' ControlPanel
         ' 
-        ControlPanel.Controls.Add(PlayerTurnLabel)
+        ControlPanel.Controls.Add(GroupBox2)
+        ControlPanel.Controls.Add(GroupBox1)
         ControlPanel.Controls.Add(RestartButton)
         ControlPanel.Controls.Add(RollButton)
         ControlPanel.Controls.Add(DiceRollLabel)
@@ -111,16 +121,86 @@ Partial Class Form1
         ControlPanel.Size = New Size(435, 1555)
         ControlPanel.TabIndex = 4
         ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.Controls.Add(PlayerTurnLabel)
+        GroupBox2.Location = New Point(12, 364)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Size = New Size(410, 142)
+        GroupBox2.TabIndex = 10
+        GroupBox2.TabStop = False
+        GroupBox2.Text = "TURN"
+        ' 
         ' PlayerTurnLabel
         ' 
         PlayerTurnLabel.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        PlayerTurnLabel.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        PlayerTurnLabel.Location = New Point(12, 358)
+        PlayerTurnLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        PlayerTurnLabel.ForeColor = Color.Blue
+        PlayerTurnLabel.Location = New Point(9, 35)
         PlayerTurnLabel.Name = "PlayerTurnLabel"
-        PlayerTurnLabel.Size = New Size(410, 64)
+        PlayerTurnLabel.Size = New Size(395, 104)
         PlayerTurnLabel.TabIndex = 4
-        PlayerTurnLabel.Text = "Player 1 Turn"
+        PlayerTurnLabel.Text = "Player 1"
         PlayerTurnLabel.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(labelPlayerOnePosition)
+        GroupBox1.Controls.Add(labelPlayer2Position)
+        GroupBox1.Controls.Add(labelPlayer1Position)
+        GroupBox1.Controls.Add(labelPlayerTwoPosition)
+        GroupBox1.Location = New Point(12, 550)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(410, 441)
+        GroupBox1.TabIndex = 9
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "POSITION"
+        ' 
+        ' labelPlayerOnePosition
+        ' 
+        labelPlayerOnePosition.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        labelPlayerOnePosition.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        labelPlayerOnePosition.ForeColor = Color.Blue
+        labelPlayerOnePosition.Location = New Point(9, 160)
+        labelPlayerOnePosition.Name = "labelPlayerOnePosition"
+        labelPlayerOnePosition.Size = New Size(395, 45)
+        labelPlayerOnePosition.TabIndex = 5
+        labelPlayerOnePosition.Text = "Player One"
+        labelPlayerOnePosition.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' labelPlayer2Position
+        ' 
+        labelPlayer2Position.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        labelPlayer2Position.Font = New Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        labelPlayer2Position.ForeColor = Color.Crimson
+        labelPlayer2Position.Location = New Point(6, 293)
+        labelPlayer2Position.Name = "labelPlayer2Position"
+        labelPlayer2Position.Size = New Size(398, 50)
+        labelPlayer2Position.TabIndex = 8
+        labelPlayer2Position.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' labelPlayer1Position
+        ' 
+        labelPlayer1Position.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        labelPlayer1Position.Font = New Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        labelPlayer1Position.ForeColor = Color.Blue
+        labelPlayer1Position.Location = New Point(6, 95)
+        labelPlayer1Position.Name = "labelPlayer1Position"
+        labelPlayer1Position.Size = New Size(398, 50)
+        labelPlayer1Position.TabIndex = 7
+        labelPlayer1Position.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' labelPlayerTwoPosition
+        ' 
+        labelPlayerTwoPosition.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        labelPlayerTwoPosition.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        labelPlayerTwoPosition.ForeColor = Color.Crimson
+        labelPlayerTwoPosition.Location = New Point(9, 343)
+        labelPlayerTwoPosition.Name = "labelPlayerTwoPosition"
+        labelPlayerTwoPosition.Size = New Size(395, 45)
+        labelPlayerTwoPosition.TabIndex = 6
+        labelPlayerTwoPosition.Text = "Player Two"
+        labelPlayerTwoPosition.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Form1
         ' 
@@ -129,12 +209,15 @@ Partial Class Form1
         ClientSize = New Size(1985, 1558)
         Controls.Add(ControlPanel)
         Controls.Add(BoardPanel)
+        FormBorderStyle = FormBorderStyle.FixedDialog
         Name = "Form1"
-        Text = "Form1"
+        Text = "SNAKE AND LADDER GAME"
         BoardPanel.ResumeLayout(False)
         CType(PlayerOnePictureBox, ComponentModel.ISupportInitialize).EndInit()
         CType(PlayerTwoPictureBox, ComponentModel.ISupportInitialize).EndInit()
         ControlPanel.ResumeLayout(False)
+        GroupBox2.ResumeLayout(False)
+        GroupBox1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -146,5 +229,11 @@ Partial Class Form1
     Friend WithEvents PlayerTwoPictureBox As PictureBox
     Friend WithEvents ControlPanel As Panel
     Friend WithEvents PlayerTurnLabel As Label
+    Friend WithEvents labelPlayerTwoPosition As Label
+    Friend WithEvents labelPlayerOnePosition As Label
+    Friend WithEvents labelPlayer2Position As Label
+    Friend WithEvents labelPlayer1Position As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
 
 End Class

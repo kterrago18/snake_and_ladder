@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Snake And Ladder"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4500efd0be796a30c2074c5f2c47854699756004"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Snake And Ladder"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Snake And Ladder"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
