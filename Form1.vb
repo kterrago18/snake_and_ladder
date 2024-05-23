@@ -5,7 +5,6 @@
     Dim ladders(,) As Integer = {{5, 32}, {59, 99}, {75, 97}}
     Dim snakes(,) As Integer = {{36, 25}, {40, 19}, {78, 55}, {91, 54}}
 
-
     Dim playerOneBoardLocation As Integer = 1
     Dim playerTwoBoardLocation As Integer = 1
 
@@ -14,9 +13,11 @@
 
     '0 - player one, 1 - player two
     Dim playerTurnSwitch As Integer = 1
+
+    'This will execute when the form is loaded
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.CenterToScreen()
-        InitialLoad()
+        Me.CenterToScreen() 'Load this window at center of the screen
+        InitialLoad() 'Setting initials values
     End Sub
 
     Private Sub InitialLoad()
@@ -34,7 +35,8 @@
         diceNumberInt = 0
     End Sub
 
-    Private Sub SwitchTurn(ByVal diceRandomValue As Integer)
+    Private Sub PlayerTurning(ByVal diceRandomValue As Integer)
+        'When it's player one's turn
         If (playerTurnSwitch = 0) Then
             PlayerTurnLabel.Text = "Player 1"
             PlayerTurnLabel.ForeColor = Color.Blue
@@ -42,7 +44,7 @@
             playerTwoBoardLocation += diceRandomValue 'Track player board location
             MovePlayer(PlayerTwoPictureBox, playerTwoBoardLocation, labelPlayer2Position)
             PlayerTwoTurn()
-        Else
+        Else 'When it's player two's turn
             PlayerTurnLabel.Text = "Player 2"
             PlayerTurnLabel.ForeColor = Color.Crimson
 
@@ -84,7 +86,7 @@
         Next ladder
 
         'If player got  bitten by a snake
-        For snake = 0 To 2
+        For snake = 0 To 3
             If playerBoardLocation = snakes(snake, 0) Then
                 MsgBox($"You got bitten by a snake! Your position will decrease to: {snakes(snake, 1)}")
                 player.Location = SetBoardPosition(snakes(snake, 1))
@@ -171,15 +173,17 @@
     End Function
 
     Function SetXLocation(ByRef playerBoardLocation As Integer) As Integer
-        Dim stepX As Integer = playerBoardLocation Mod 10
+        Dim stepX As Integer = playerBoardLocation Mod 10 'This will get the remaining value, ex. 25 mod 10, the value is 5. 
 
         Dim x As Integer
 
+        ' 144 is the equivalent value of one step horizontally
         If stepX = 0 Then
-            x = defaultPlayerCoordinate(0) + (144 * 9)
+            x = defaultPlayerCoordinate(0) + (144 * 9) 'this is equivalent of 10 steps horizontally
 
         Else
             x = defaultPlayerCoordinate(0) + (144 * (stepX - 1))
+            'if stepX is 5 it will reduce 1, so it will become 4, it means it will take 4 steps horizontally
 
         End If
 
@@ -191,12 +195,15 @@
 
         Dim y As Integer
 
+        '148 is equivalent of one step vertically
         y = defaultPlayerCoordinate(1) - (148 * boardRow)
+        'if the boardRow is 0, it means it's on 1st row, if 1 it's on 2nd row, and so on..
 
         Return y
 
     End Function
 
+    'This will update the label of player's location
     Private Sub SetLabelBoardLocation(ByRef boardLocation As Integer, ByRef playerPositionLabel As Label)
 
         If boardLocation > 100 Then
@@ -208,10 +215,10 @@
     End Sub
 
     Private Sub RollDice()
-        Dim randomDice As Integer = GetRandom(1, 6)
-        DiceRollLabel.Text = randomDice.ToString
+        Dim randomDice As Integer = GetRandom(1, 6) 'Getting 1 integer number from 1-6 randomly
+        DiceRollLabel.Text = randomDice.ToString 'Displaying selected random rolled dice number
         diceNumberInt = randomDice
-        SwitchTurn(diceNumberInt)
+        PlayerTurning(diceNumberInt) 'The movement of the player depending on diceNumberInt value
     End Sub
 
     Public Function GetRandom(ByVal Min As Integer, ByVal Max As Integer) As Integer
@@ -225,5 +232,9 @@
 
     Private Sub RestartButton_Click(sender As Object, e As EventArgs) Handles RestartButton.Click
         ResetGame()
+    End Sub
+
+    Private Sub BoardPanel_Paint(sender As Object, e As PaintEventArgs) Handles BoardPanel.Paint
+
     End Sub
 End Class
