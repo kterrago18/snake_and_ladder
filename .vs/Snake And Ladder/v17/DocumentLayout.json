@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{9ABF356F-C2A7-40A0-8F89-9F4C6FEB9E80}|Snake And Ladder.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9ABF356F-C2A7-40A0-8F89-9F4C6FEB9E80}|Snake And Ladder.vbproj|c:\\users\\kennethterrago\\documents\\repositories\\snake_and_ladder\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{9ABF356F-C2A7-40A0-8F89-9F4C6FEB9E80}|Snake And Ladder.vbproj|C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{9ABF356F-C2A7-40A0-8F89-9F4C6FEB9E80}|Snake And Ladder.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -18,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,9 +28,9 @@
               "RelativeDocumentMoniker": "Form1.vb",
               "ToolTip": "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\Form1.vb",
               "RelativeToolTip": "Form1.vb",
-              "ViewState": "AQIAANoAAAAA/jIzM/MmwHkAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAppmZmZkNwBkAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-07T06:44:05.873Z",
+              "WhenOpened": "2024-05-23T10:34:32.845Z",
               "EditorCaption": ""
             },
             {
@@ -46,8 +42,7 @@
               "ToolTip": "C:\\Users\\kennethterrago\\Documents\\Repositories\\snake_and_ladder\\Form1.vb [Design]",
               "RelativeToolTip": "Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-07T06:28:49.949Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-23T10:33:07.948Z"
             }
           ]
         }
